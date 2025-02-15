@@ -312,3 +312,45 @@ div#jsq_total {
 	animation-delay: calc(0.1s * var(--jsq_at));
 }
 
+
+
+
+
+
+
+
+
+
+.jsq_finish_box {
+    text-align: center;
+}
+
+.jsq_finish_box .jsq_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px; /* बटन के बीच अंतर */
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.jsq_finish_box .jsq_btn:hover {
+    background-color: #0056b3;
+}
+
+/* मोबाइल स्क्रीन के लिए */
+@media (max-width: 600px) {
+    .jsq_finish_box {
+        display: flex;
+        flex-direction: column; /* बटन को ऊपर-नीचे रखने के लिए */
+        align-items: center;
+    }
+
+    .jsq_finish_box .jsq_btn {
+        width: 80%; /* बटन को बड़ा करने के लिए */
+    }
+}
+
